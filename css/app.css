@@ -106,139 +106,31 @@ a {
 	position: relative;
 }
 
-.container-menu {
-	background: #ecc494; /* Old browsers */
-	background: -moz-linear-gradient(left,  #ecc494 31%, #a07034 65%, #a07034 65%, #754913 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  #ecc494 31%,#a07034 65%,#a07034 65%,#754913 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  #ecc494 31%,#a07034 65%,#a07034 65%,#754913 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecc494', endColorstr='#754913',GradientType=1 ); /* IE6-9 */
-	padding: 1px;
-	position: fixed;
-	right: 0;
-	width: 100%;
-	z-index: 200;
-}
-.menu-nav {
-	background-color: #754913;
-	position: relative;
-}
-
-.menu-nav ul {
-	float: right;
-}
-
-.menu-nav .menu-item {
-	border-top: 4px solid rgba(0,0,0,0);
-	display: inline-block;
-	padding: 10px 0px;
-}
-
-.menu-nav .menu-item:before {
-	font-size: 25px;
-	line-height: 10px;
-	color: white;
-	content: "|";  /* □ */
-	/*margin-right: -10px;*/
-}
-
-.menu-nav .menu-item:first-child:before {
-	content: none;  /* □ */
-	/*margin-right: -10px;*/
-}
-
-.menu-nav .menu-item:hover {
-	background-color: #C3955C;
-	border-top: 4px solid #82B7B3;
-	transition: all .5s ease; 
-}
-
-.menu-nav .menu-item a {
-	padding: 15px;
-}
-
-.menu-nav .menu-item a span {
-	font-size: 1.2em;
-}
-
-.icon-a {
-	font-size: 20px;
-	padding-right: 15px;
-}
-
-#header-slider {
-	/*border: 2px solid blue;*/
-	position: relative;
-	height: 400px;
-}
-
-.container-slider, .container-slider>div {
-	height: 100%;
-}
-
-.container-slider ul {
-	height: 100% !important;
-}
-
-.container-slider .lSPager {
-	margin-top: -40px !important;
-	z-index: 50;
-}
-
-.slide-item {
-	background-color: #82B7B3;
-	/*overflow: hidden;*/
+#header-image {
+	background-image: url('../img/book-and-cup.jpeg');
+	background-position-y: -100px;
 	background-size: cover;
-	height: 100%;
 	position: relative;
+	height: 600px;
 }
 
-.slide-item > img {
+header {
+	top: 0;
+	height: 380px;
 	position: absolute;
-	width: 100%;
-	top: -70px;
+	width: 100vw;
 }
 
-.lSAction>a {
-	background-color: grey;
-	background-image: none;
-	border: 1px solid white;
-	border-radius: 50%;
+header .titles {
+	bottom: 0;
+	left: 25px;
+	position: absolute;
+	z-index: 1;
+}
+
+.titles > * {
 	color: white;
-	font-size: 1.2em;
-	line-height: 33px;
-	text-align: center;
-}
-
-.lSPrev:before {
-	content: "<";
-}
-
-.lSNext:before {
-	content: ">";
-}
-
-.container-logo {
-	border-radius: 75px;
-	bottom: 30px;
-	height: 150px;
-	overflow: hidden;
-	position: absolute;
-	right: 30px;
-	width: 150px;
-	z-index: 100;
-}
-
-.container-logo img {
-	height: 100%;
-	line-height: 140px;
-	text-align: center;
-	width: 100%;
-}
-
-.titles {
-	color: #754913;
-	font-family: 'Passion One', cursive;
-	text-align: center;
+	text-align: left;
 }
 
 .main-title {
@@ -248,6 +140,78 @@ a {
 
 .secondary-title {
 	font-size: 20px;
+}
+
+.container-menu {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	z-index: 200;
+	/*sdisplay: none;*/
+}
+.menu-nav {
+	background-color: #754913;
+	position: relative;
+	top: 20px;
+}
+
+.menu-nav ul {
+	float: right;
+	margin-right: 45px;
+}
+
+.menu-nav .menu-item {
+	/*border-radius: 10px 10px 0 0;*/
+	/*border-top: 4px solid rgba(0,0,0,0);*/
+	/*border-bottom: 3px solid white;
+	border-top: 3px solid white;*/
+	display: inline-block;
+	padding: 10px 5px;
+}
+
+.menu-nav .menu-item:hover span{
+	color: #C3955C;
+	transition: all .5s ease; 
+}
+
+.menu-nav .menu-item a {
+	padding: 8px;
+}
+
+.menu-nav .menu-item a span {
+	font-stretch: condensed;
+	font-weight: bold;
+	font-size: 16px;
+	
+	/*color: #0D1D32;*/
+
+}
+
+.container-logo {
+	/*border: 1px solid rgba(251,254,254,.5);;*/
+    background-color: rgba(251,254,254,.1);
+    border-radius: 12.5vh;
+    bottom: 5vh;
+    height: 20vh;
+    opacity: .4;
+    overflow: hidden;
+    position: absolute;
+    right: 5vw;
+    transform: rotateX(-20deg);
+    width: 20vh;
+    z-index: 100;
+}
+
+.container-logo img {
+	height: 100%;
+	line-height: 140px;
+	text-align: center;
+	width: 100%;
+}
+
+.icon-a {
+	font-size: 20px;
+	padding-right: 15px;
 }
 
 .register {
@@ -280,7 +244,7 @@ footer {
 	bottom: 0;
 	color: white;
 	padding: 8px;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	z-index: 200;
 }
